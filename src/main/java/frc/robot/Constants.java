@@ -24,19 +24,26 @@ public final class Constants {
         public static final double SKEW_Y_RL_METERS = -0.75;
 
         public static final double TICKS_PER_METER = 48122.439486053394;
-        public static final double TICKS_PER_DEGREE = 0.9266354464461463;
+        public static final double TICKS_PER_DEGREE = 2.844444;
 
-        public static final double DRIVE_KP = 0.2;
+        public static final double DRIVE_KP = 0.1;
         public static final double DRIVE_KI = 0;
         public static final double DRIVE_KD = 0;
         public static final double ANGLE_KP = 0.2;
         public static final double ANGLE_KI = 0;
         public static final double ANGLE_KD = 0;
 
-        public static final double DRIVE_SPEED_MULTIPLIER = 2 / Math.sqrt(2);
-        public static final double ROTATION_SPEED_MULTIPLIER = 2 * Math.PI;
+        public static final double DRIVE_SPEED_MULTIPLIER = 2 / Math.sqrt(2) / 1.25;
+        public static final double ROTATION_SPEED_MULTIPLIER = 2 * Math.PI / 4;
 
         public static final double ANGLE_TOLERANCE = 1;
+
+        public static final double[] ZERO_ANGLES = {
+                167.70,
+                85.43,
+                173.32,
+                280.90
+        };
     }
 
     public static final class PhotonVisionConstants {
